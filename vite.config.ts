@@ -6,7 +6,8 @@ const extensions = ['.web.tsx', '.tsx', '.web.ts', '.ts', '.web.jsx', '.jsx', '.
 export default defineConfig(({ mode }) => ({
   plugins: [viteReact()],
   define: {
-    global: 'self'
+    global: mode === 'production' ? 'globalThis' : 'self',
+    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
   },
   optimizeDeps: {
     esbuildOptions: {

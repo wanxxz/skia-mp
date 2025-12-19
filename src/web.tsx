@@ -4,6 +4,10 @@ import { createRoot } from 'react-dom/client'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <WithSkiaWeb getComponent={() => import('./root')} fallback={null} opts={{ locateFile: () => '/canvaskit.wasm' }} />
+    <WithSkiaWeb
+      getComponent={() => import('./root')}
+      fallback={null}
+      opts={{ locateFile: () => '/libs/canvaskit.wasm' }}
+    />
   </StrictMode>
 )
