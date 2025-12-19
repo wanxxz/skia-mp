@@ -1,4 +1,4 @@
-import { instantiate, Root } from '../libs/canvaskit'
+const { instantiate, Root } = require('../libs/canvaskit')
 
 Component({
   lifetimes: {

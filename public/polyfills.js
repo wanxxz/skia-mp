@@ -75,4 +75,5 @@ TextDecoder.prototype.decode = function (octets) {
   return string
 }
 
-export { TextDecoder, TextEncoder }
+exports.TextDecoder = TextDecoder
+exports.TextEncoder = TextEncoder
