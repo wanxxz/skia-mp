@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "postinstall": "setup-skia-web public/mp/libs",
+    "prepare": "husky",
+    "prestart": "vite build",
+    "start": "vite preview"
+  },
+  "dependencies": {
+    "@shopify/react-native-skia": "2.4.14",
+    "react": "19.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "25.0.3",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "5.1.2",
+    "husky": "9.1.7",
+    "lint-staged": "16.2.7",
+    "miniprogram-api-typings": "4.1.2",
+    "prettier": "3.7.4",
+    "react-dom": "19.2.3",
+    "react-native": "0.83.1",
+    "react-native-web": "0.21.2",
+    "typescript": "5.9.3",
+    "vite": "7.3.0"
+  }
+}
