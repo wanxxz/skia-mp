@@ -1,8 +1,8 @@
-const { instantiate, Root } = require('../libs/canvaskit')
+const { init, Root } = require('../libs/canvaskit')
 
 Component({
   lifetimes: {
-    attached() {
+    ready() {
       const query = this.createSelectorQuery()
       query
         .select('#root')
@@ -11,9 +11,7 @@ Component({
           const canvas = res[0].node
           const gl = canvas.getContext('webgl')
 
-          instantiate().then(CanvasKit => {
-            global.CanvasKit = CanvasKit
-            CanvasKit.MakeCanvasSurface(gl)
+          init().then(() => {
             Root()
           })
         })

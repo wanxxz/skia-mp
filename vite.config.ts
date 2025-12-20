@@ -27,7 +27,7 @@ export default defineConfig(({ mode }) => ({
     mode === 'production'
       ? {
           lib: {
-            entry: ['./src/mp.ts'],
+            entry: ['./src/mp/index.ts'],
             formats: ['cjs'],
             fileName: () => `libs/canvaskit.js`
           }
