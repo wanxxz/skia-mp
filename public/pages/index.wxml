@@ -1,1 +1,1 @@
-<canvas id="root" type="webgl" />
+<canvas id="root" type="webgl2" />

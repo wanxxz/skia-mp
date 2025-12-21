@@ -29,7 +29,7 @@ export default defineConfig(({ mode }) => ({
           lib: {
             entry: ['./src/mp/index.ts'],
             formats: ['cjs'],
-            fileName: () => `libs/canvaskit.js`
+            fileName: () => `libs/app.js`
           }
         }
       : {}
