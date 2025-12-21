@@ -2,9 +2,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "postinstall": "patch-package",
+    "postinstall": "patch-package && setup-skia-web public/libs",
     "prepare": "husky",
-    "prestart": "setup-skia-web public/mp/libs && vite build",
+    "prestart": "vite build",
     "start": "vite preview"
   },
   "dependencies": {
